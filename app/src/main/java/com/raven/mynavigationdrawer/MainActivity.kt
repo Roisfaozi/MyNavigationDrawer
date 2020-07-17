@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.bumptech.glide.Glide
 import de.hdodenhof.circleimageview.CircleImageView
+import androidx.navigation.ui.AppBarConfiguration.Builder
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration.Builder(
             R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-            R.id.nav_tools, R.id.nav_share, R.id.nav_send)
+            R.id.nav_tools, R.id.nav_share, R.id.nav_send, R.id.nav_cart)
             .setDrawerLayout(drawerLayout)
             .build()
 
